@@ -6,8 +6,6 @@ from reportlab.lib import colors
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-
-
 font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 font_bold_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
