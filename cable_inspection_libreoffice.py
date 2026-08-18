@@ -59,7 +59,7 @@ def generate_pdf_report(results: list, filename: str = "Cable_Inspection_Report.
         textColor=colors.HexColor("#003366"),
         spaceAfter=15
     )
-    elements.append(Paragraph("Инженерен доклад: Изчисление на кабелни трасета", title_style))
+    elements.append(Paragraph("Изчисление на кабелни трасета", title_style))
 
     cell_style = ParagraphStyle('CellStyle', fontName=MAIN_FONT, fontSize=9, alignment=1)
     header_style = ParagraphStyle('HeaderStyle', fontName=BOLD_FONT, fontSize=9, textColor=colors.whitesmoke, alignment=1)
@@ -93,7 +93,6 @@ def generate_pdf_report(results: list, filename: str = "Cable_Inspection_Report.
     print(f"\n[Успех] PDF докладът е записан: {filename}")
 
 def generate_csv_report(results: list, filename: str = "Cable_Report.csv"):
-    """Създава CSV файл, който LibreOffice Calc отваря директно."""
     headers = ["Трасе / Обект", "Ток", "Дължина", "Сечение", "Пад (V)", "Пад (%)", "Статус"]
 
     with open(filename, mode="w", encoding="utf-8-sig", newline="") as f:
